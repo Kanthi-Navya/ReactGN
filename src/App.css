@@ -1,0 +1,33 @@
+.container-fulid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+input[type=text] {
+  background: transparent;
+  border: none;
+  /* border-bottom: 1px solid #000000; */
+}
+.app{
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 12px;
+  background: #F7F9FA;
+  margin: 20px;
+}
+.topHead {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: inherit
+}
+.nav-item {
+  font-size: initial;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 2%;
+}
+.signupBtn{
+  background-color: rgb(28,233,158);
+  border: none;
+  font-size: 17px;
+  font-family: inherit;
+}

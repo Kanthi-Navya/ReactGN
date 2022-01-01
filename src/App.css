@@ -2,10 +2,14 @@
   padding-left: 10%;
   padding-right: 10%;
 }
-input[type=text] {
+input[type=search] {
   background: transparent;
   border: none;
-  /* border-bottom: 1px solid #000000; */
+}
+input[type=search]:focus {
+  outline: none;
+  border: none;
+
 }
 .app{
   display: inline-block;
@@ -17,17 +21,30 @@ input[type=text] {
 .topHead {
   font-size: 25px;
   font-weight: 600;
-  font-family: inherit
+  font-family: inherit;
+  padding-right: 10%;
 }
-.nav-item {
+.navListitem {
   font-size: initial;
-    font-weight: 500;
-    font-family: inherit;
-    padding: 2%;
+  font-weight: 500;
+  font-family: inherit;
+  padding-left: 4%;
 }
 .signupBtn{
-  background-color: rgb(28,233,158);
+  width: 140px !important;
+  height: 50px;
   border: none;
+  border-radius: 8px;
+  background: linear-gradient(43deg, rgb(124 52 130) 4%, rgba(255,62,217,0.9178046218487395) 30%, rgb(247 105 4) 100%);
+  border: none !important;
   font-size: 17px;
   font-family: inherit;
+}
+.loginHeading {
+  text-align: center;
+  padding: 8% 20%; 
+} 
+.subHeadLogin {
+  font-size: 20px;
+  
 }

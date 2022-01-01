@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import MainComponet from "./MainComponent";
+import Main from "./Main";
 import Footer from "./Footer";
 const Login = () => {
   return (
 
     <div>
       <Header />
-      {/* <MainComponet /> */}
+      <Main />
       {/* <Footer /> */}
     </div>
   );

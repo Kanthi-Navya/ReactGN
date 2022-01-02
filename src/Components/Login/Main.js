@@ -8,10 +8,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Google from '../../images/Google.svg';
 import facebook from '../../images/facebook.svg';
 import apple from '../../images/apple.svg';
-import { faCircle, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
 function Main() {
+  const [state, setState] = useState({
+    passwd: "false"
+  });
+
+  const [userDetails, setUserDetails] = useState ({
+    email: "",
+    password: ""
+  })
+  const handleChange = (e) => {
+    console.log(e, "text--onchange");
+    setUserDetails({
+      email: e.target.value,
+      password: e.target.value
+    })
+  }
+
+  const handleClick = (e) => {
+    console.log(e);
+    setState({
+      passwd: !state.passwd
+    })
+    console.log(state.passwd, "password");
+    console.log(userDetails.password, "user password");
+  }
   return (
     <div>
       <Container>
@@ -25,7 +49,7 @@ function Main() {
           <Row>
             <Col sm={5}>
               <InputGroup className="login_group">
-                <FormControl placeholder="Teacher / Student ID" />
+                <FormControl placeholder="Teacher / Student ID" onChange={handleChange} />
                 <InputGroup.Text >
                   <button className="btn" type="button">
                     <FontAwesomeIcon icon={faCircle} />
@@ -34,10 +58,11 @@ function Main() {
                 </InputGroup.Text>
               </InputGroup>
               <InputGroup className="login_group">
-                <FormControl placeholder="8 Digit Pin" />
+                <FormControl placeholder="8 Digit Pin" type="password" onChange={handleChange}  defaultValue={setUserDetails.password}/>
                 <InputGroup.Text>
-                  <button className="btn" type="button">
-                    <FontAwesomeIcon icon={faEyeSlash} />
+                  <button className="btn" type="button" onClick={handleClick}>
+                    {state.passwd ? <FontAwesomeIcon icon={faEyeSlash} /> :  <FontAwesomeIcon icon={faEye} />}
+
                   </button>
                 </InputGroup.Text>
               </InputGroup>
@@ -66,9 +91,7 @@ function Main() {
 
           <Row>
             <div style={{ marginTop: '7%' }}>
-              {/* <Link to="/"  */}
-                <div className="forgotPwd">Forgot Password?</div>
-                {/* </Link> */}
+              <div className="forgotPwd"><a href="/">Forgot Password?</a></div>
             </div>
           </Row>
         </div>

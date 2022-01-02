@@ -48,3 +48,34 @@ input[type=search]:focus {
   font-size: 20px;
   
 }
+.loginBtn {
+  width: 100%;
+  text-align: center;
+  border: none !important;
+  /* font-size: 20px; */
+  background: linear-gradient(43deg, rgb(124 52 130) 4%, rgba(255,62,217,0.9178046218487395) 30%, rgb(247 105 4) 100%);
+}
+.loginBtns {
+  width: 100%;
+  text-align: left !important;
+  border: 2px solid black !important;
+  color: black !important;
+
+  background-color: white !important;
+}
+.login_group{
+  padding-bottom: 2% !important;
+}
+.separator {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto !important;
+  
+}
+
+Button span {
+  font-size: 15px;
+  padding: 3%;
+}

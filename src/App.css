@@ -79,3 +79,22 @@ Button span {
   font-size: 15px;
   padding: 3%;
 }
+
+.footer{
+  position: relative;
+  bottom: 0;
+  padding: 1%;
+}
+.footer-left{
+  float: left;
+  /* padding-left: 5%; */
+}
+.footer-right{
+  float: right !important;
+  /* padding-right: 5%; */
+}
+.forgotPwd {
+  font-size: 18px;
+  color: black; 
+   text-align: center !important;
+}

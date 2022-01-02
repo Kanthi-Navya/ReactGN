@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap';
+import Link from 'react-router-dom';
 import { Form, FormGroup } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
@@ -10,7 +11,7 @@ import apple from '../../images/apple.svg';
 import { faCircle, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
-const Main = () => {
+function Main() {
   return (
     <div>
       <Container>
@@ -61,6 +62,14 @@ const Main = () => {
                 <span>Sign in with Apple Account</span>
               </Button>
             </Col>
+          </Row>
+
+          <Row>
+            <div style={{ marginTop: '7%' }}>
+              {/* <Link to="/"  */}
+                <div className="forgotPwd">Forgot Password?</div>
+                {/* </Link> */}
+            </div>
           </Row>
         </div>
       </Container>

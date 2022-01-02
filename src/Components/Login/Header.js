@@ -1,8 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Nav, Navbar, Form, FormControl,Container,Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
+
+  const [search, setSearch] = useState({
+    searchInputValue:''
+  })
+
+  const handleChangeSearch=(e) => {
+    console.log(e.target,"search");
+    setSearch({
+      // ...search,
+      searchInputValue: e.target.value
+    })
+
+    // if(search.searchInputValue === "enter"){
+    //   console.log(search.searchInputValue,"search.searchInputValue");
+    // }
+  }
+
+  
 return(
 <Navbar bg="light" expand="lg">
   <Container>
@@ -22,6 +40,8 @@ return(
         <input type="search"
           placeholder="Search......"
           aria-label="Search"
+          name="searchInputValue"
+          onChange= {handleChangeSearch}
         />
         <button className="btn" type="button">
            <FontAwesomeIcon icon={faSearch} />

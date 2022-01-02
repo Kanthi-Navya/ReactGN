@@ -47,7 +47,7 @@ function Main() {
         </div>
         <div>
           <Row>
-            <Col sm={5}>
+            <Col sm={5} md={5} lg={5} >
               <InputGroup className="login_group">
                 <FormControl placeholder="Teacher / Student ID" onChange={handleChange} />
                 <InputGroup.Text >
@@ -68,8 +68,8 @@ function Main() {
               </InputGroup>
               <Button className="loginBtn btn-lg">Login to your account </Button>
             </Col>
-            <Col sm={2} xl={1} className="separator">/</Col>
-            <Col sm={5}>
+            <Col sm={2} md={2} lg={2} xl={2} className="separator">/</Col>
+            <Col sm={5} md={5} lg={5} xl={5}>
               <InputGroup className="login_group ">
                 <Button className="loginBtns btn-lg">
                   <img src={Google} alt="G" />

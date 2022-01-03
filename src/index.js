@@ -11,6 +11,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'popper.js/dist/umd/popper.min.js';
 import 'jquery/dist/jquery.slim.min.js';
 import 'jquery/dist/jquery.min.js';
+
 // import "bootstrap/js/src/collapse.js";
 ReactDOM.render(
   <React.StrictMode>

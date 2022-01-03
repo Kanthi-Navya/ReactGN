@@ -11,13 +11,8 @@ const Header = () => {
   const handleChangeSearch=(e) => {
     console.log(e.target,"search");
     setSearch({
-      // ...search,
       searchInputValue: e.target.value
     })
-
-    // if(search.searchInputValue === "enter"){
-    //   console.log(search.searchInputValue,"search.searchInputValue");
-    // }
   }
 
   

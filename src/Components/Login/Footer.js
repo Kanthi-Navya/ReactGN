@@ -1,17 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Footer=() => {
+function Footer(){
 
     return(
-        <div className="footer">
-            <div className="footer-left">
+        <div className="fixed-bottom ">
+            <div className="float-start p-3">
                 <a href="/">Privacy Policy</a>
-                {/* <Link to="/" >Privacy Policy</Link> */}
             </div>
-            <div className="footer-right">
+            <div className="float-end p-3">
                 <a href="/">Copyright</a>
-                {/* <Link to="/">Copyright<span style={{color: 'rgb(114, 114, 114'}}>&#64;</span>Tract 2022</Link> */}
             </div>
         </div>
     );
